@@ -27,7 +27,8 @@ fetch(allCountriesData)
             countryCard.classList.add(`country-card`);
             // console.log(countryCard);
             countryCard.addEventListener(`click`, function(){
-                window.location.href = `/country.html?name=${country.name.common}`;
+                window.location.href = `./country.html?name=${country.name.common}`;
+                
             });
             
             
