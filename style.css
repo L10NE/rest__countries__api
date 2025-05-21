@@ -211,12 +211,12 @@ main{
 .filter.header-dark,
 .back--btn.header-dark,
 .header-dark,
-.border-link.header-dark,
 .country-card.header-dark{
     background-color: var(--Dark-Blue);
     color: white;
 }
 
+body.dark .border-link,
 body.dark .country-card{
         background-color: var(--Dark-Blue);
     color: white;
