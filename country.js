@@ -84,8 +84,8 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 
 const change = ()=>{
   headerContainer.classList.toggle(`header-dark`);
-  document.body.classList.toggle(`dark`);
   backBtn.classList.toggle(`header-dark`);
+  document.body.classList.toggle(`dark`);
   const isDark = document.body.classList.contains(`dark`);
   localStorage.setItem(`darkMode`, isDark ? `enabled` : `disabled`);
 };
