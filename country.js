@@ -84,10 +84,10 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
 
 const change = ()=>{
   headerContainer.classList.toggle(`header-dark`);
-  main.classList.toggle(`dark`);
+  document.body.classList.toggle(`dark`);
   backBtn.classList.toggle(`header-dark`);
-  // const isDark = document.body.classList.contains(`dark`);
-  // localStorage.setItem(`darkMode`, isDark ? `enabled` : `disabled`);
+  const isDark = document.body.classList.contains(`dark`);
+  localStorage.setItem(`darkMode`, isDark ? `enabled` : `disabled`);
 };
 
 if(localStorage.getItem(`darkMode`) === `enabled`){
