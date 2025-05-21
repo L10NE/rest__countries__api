@@ -108,7 +108,7 @@ fetch(allCountriesData)
 
         //filter by search ::
         input.addEventListener(`input`, (e)=>{
-            const text = e.target.value.tolowerCase();
+            const text = e.target.value.toLowerCase();
 
             const filterCountries = allCountriesData.filter(function(country){
                 return country.name.common.toLowerCase().includes(text)
