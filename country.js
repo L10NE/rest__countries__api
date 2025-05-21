@@ -86,8 +86,8 @@ const change = ()=>{
   headerContainer.classList.toggle(`header-dark`);
   main.classList.toggle(`dark`);
   backBtn.classList.toggle(`header-dark`);
-  const isDark = document.body.classList.contains(`dark`);
-  localStorage.setItem(`darkMode`, isDark ? `enabled` : `disabled`);
+  // const isDark = document.body.classList.contains(`dark`);
+  // localStorage.setItem(`darkMode`, isDark ? `enabled` : `disabled`);
 };
 
 if(localStorage.getItem(`darkMode`) === `enabled`){
