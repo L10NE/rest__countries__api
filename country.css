@@ -1,0 +1,169 @@
+
+:root{
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Very-Dark-Blue-background: hsl(207, 26%, 17%);
+    --Very-Dark-Blue: hsl(200, 15%, 8%);
+    --Dark-Gray: hsl(0, 0%, 52%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    
+}
+
+body{
+    height: 100vh;
+}
+
+.countries-details-container{
+    max-width: 130rem;
+    margin:0 auto ;
+}
+
+
+.back--btn{
+    padding: .8rem 2.4rem;
+    box-shadow: 0 .2rem 1rem rgba(0,0,0,.1);;
+    border-radius: .4rem;
+    text-decoration: none;
+    color:var(--Dark-Blue) ;
+    font-size: 1.6rem;
+    transition: all .3s ease-in;
+}
+
+.country-details{
+    display: flex;
+    align-items: center;
+    gap:64px ;
+    margin-top: 6.4rem;
+}
+
+.country-details img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.details-text{
+    margin-top: 4.4rem;
+    display:flex;
+    flex-direction: column;
+    row-gap: 1.9rem;
+    column-gap:6.4rem ;
+    flex-wrap: wrap;
+    max-height: 15rem;
+}
+
+.details-text p{
+    font-size: 1.3rem;
+}
+
+.border-countries{
+    margin-top: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.border-countries p{
+    font-size: 1.4rem;
+}
+
+.border-link{
+    padding: .6rem 2rem;
+    text-decoration: none;
+    color: var(--Dark-Gray);
+    box-shadow: 0 .2rem .8rem rgba(0,0,0,.1);
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    margin: .5rem;
+    display: inline-block;
+    transition: all .3s ease-in;
+}
+
+.main.dark .border-link{
+        background-color: var(--Dark-Blue);
+    color: white;
+}
+
+
+@media(max-width : 61.25em){
+    .country-details{
+        gap: 2.2rem;
+    }
+}
+
+@media(max-width : 52.5em){
+    .country-details{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5.8rem;
+        gap: 1.2rem;
+    }
+
+    .country-details img{
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    .details-text p{
+        margin: 1rem 0;
+    }
+
+
+    .details-text{
+        margin-top: 2.4rem;
+        display: block;
+        max-height: unset;
+    }
+
+    .details-text p:nth-child(5){
+    margin-bottom: 3rem;
+    }
+}
+
+@media(max-width: 48em){
+    .countries-container{
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 1.4rem;
+    }
+
+    .header-content{
+        font-size: 1.2rem;
+    }
+
+    .border-countries{
+        margin-top: 2.4rem;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .border-countries p{
+        margin-bottom: 1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
